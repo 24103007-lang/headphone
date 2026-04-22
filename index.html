@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Headphone Shop</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav{
+    background:#111;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h1{
+    color:#00d4ff;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* HERO SECTION */
+.hero{
+    height:60vh;
+    background:url("https://images.unsplash.com/photo-1518441902112-9d2a7e9a0e74") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:40px;
+    background:rgba(0,0,0,0.5);
+    padding:20px;
+}
+
+/* PRODUCTS */
+.container{
+    padding:40px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    padding:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.price{
+    color:#00aaff;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+button{
+    background:#00aaff;
+    border:none;
+    padding:10px 15px;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<h1>🎧 Headphone Shop</h1>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Products</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h2>Premium Sound. Ultimate Experience.</h2>
+</section>
+
+<!-- PRODUCTS -->
+<section class="container">
+<h2>Popular Headphones</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1583394838336-acd977736f90">
+<h3>Wireless Headphones</h3>
+<p class="price">₹2999</p>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
+<h3>Gaming Headset</h3>
+<p class="price">₹3999</p>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b">
+<h3>Noise Cancelling</h3>
+<p class="price">₹4999</p>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1484704849700-f032a568e944">
+<h3>Studio Headphones</h3>
+<p class="price">₹5999</p>
+<button>Buy Now</button>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Headphone Shop | Simple Static Website</p>
+</footer>
+
+</body>
+</html>
